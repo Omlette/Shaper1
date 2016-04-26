@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{1302D2B0-3271-AE9E-87F3-9871B8ED2D2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;MouseTrail</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/files/So Epic/Engine/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/files/So Epic/Engine/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AngleTestingGizmos.cs" />
+     <Compile Include="Assets\Scripts\Calculations\BaseCalculations.cs" />
+     <Compile Include="Assets\Scripts\Drawing\DrawnShape.cs" />
+     <Compile Include="Assets\Scripts\Drawing\DrawnTaskShape.cs" />
+     <Compile Include="Assets\Scripts\Drawing\Interfaces\Drawable.cs" />
+     <Compile Include="Assets\Scripts\Drawing\NoneDrawable.cs" />
+     <Compile Include="Assets\Scripts\Drawing\Other\Line.cs" />
+     <Compile Include="Assets\Scripts\Drawing\PicturesComparation.cs" />
+     <Compile Include="Assets\Scripts\Effects\MouseCometTrail.cs" />
+     <Compile Include="Assets\Scripts\Game\AttemptsHandler.cs" />
+     <Compile Include="Assets\Scripts\Game\GameDecorators.cs" />
+     <Compile Include="Assets\Scripts\Game\GameFinisher.cs" />
+     <Compile Include="Assets\Scripts\Game\PointsAward.cs" />
+     <Compile Include="Assets\Scripts\Game\RoundsHandler.cs" />
+     <Compile Include="Assets\Scripts\Game\RoundsOrganizer.cs" />
+     <Compile Include="Assets\Scripts\Game\TimeStream.cs" />
+     <Compile Include="Assets\Scripts\Gizmos\Shapes Control\ShapesComparationGizmos.cs" />
+     <Compile Include="Assets\Scripts\Managers\FactoryManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\Initializing\InitializePlayer.cs" />
+     <Compile Include="Assets\Scripts\Managers\Manager.cs" />
+     <Compile Include="Assets\Scripts\Other\Factory\TaskShapeCreator.cs" />
+     <Compile Include="Assets\Scripts\Other\Interfaces\IDrawingChangeable.cs" />
+     <Compile Include="Assets\Scripts\Other\SetFactoryScene.cs" />
+     <Compile Include="Assets\Scripts\Other\SetGameScene.cs" />
+     <Compile Include="Assets\Scripts\Other\ShapesPath.cs" />
+     <Compile Include="Assets\Scripts\Other\ShapesPool.cs" />
+     <Compile Include="Assets\Scripts\Other\ShapesSetting.cs" />
+     <Compile Include="Assets\Scripts\Other\Start\GameStarter.cs" />
+     <Compile Include="Assets\Scripts\Player\Abstraction\Command.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Shapes\Abstraction\ShapeBase.cs" />
+     <Compile Include="Assets\Scripts\Shapes\ShapeCommon.cs" />
+     <Compile Include="Assets\Scripts\Shapes\TaskShape.cs" />
+     <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\UI\Factory\CreatingController.cs" />
+     <Compile Include="Assets\Scripts\UI\Factory\ShapeTitleDesirer.cs" />
+     <Compile Include="Assets\Scripts\UI\Factory\ShowTaskShapes.cs" />
+     <Compile Include="Assets\Scripts\UI\Factory\TaskShapeButton.cs" />
+     <Compile Include="Assets\Scripts\UI\Factory\TaskShapeRemover.cs" />
+     <Compile Include="Assets\Scripts\UI\Game\AttemptsDisplayUI.cs" />
+     <Compile Include="Assets\Scripts\UI\Game\GameResultUI.cs" />
+     <Compile Include="Assets\Scripts\UI\Game\PointsDisplayUI.cs" />
+     <Compile Include="Assets\Scripts\UI\Game\TaskShapeRoundTitle.cs" />
+     <Compile Include="Assets\Scripts\UI\Game\TimeMeasurmentUI.cs" />
+     <Compile Include="Assets\Scripts\UI\Start\GameStarterUI.cs" />
+     <Compile Include="Assets\TestCubeMotion.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/files/So Epic/Engine/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/files/So Epic/Engine/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
